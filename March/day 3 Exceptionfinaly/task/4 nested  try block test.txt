@@ -1,0 +1,91 @@
+i)a = 10/2
+ii)print(b[2])
+iii)except block except ValueError
+
+
+1)print("Program start")
+try:
+    print("try start")
+    a = 10/2
+    print("try end")
+    
+    
+except ZeroDivisionError:
+    print("In except block")
+    try:
+        print("except try start")
+        b = [1,2,3]
+        print(b[10])
+        print("except try end")
+    except IndexError:
+        print("except except block")
+finally:
+    print("In finally")
+    
+print("Program end")
+
+output:
+program start
+try start
+try end
+in finally
+program end
+
+2)
+print("Program start")
+try:
+    print("try start")
+    a = 10/0
+    print("try end")
+    
+    
+except ZeroDivisionError:
+    print("In except block")
+    try:
+        print("except try start")
+        b = [1,2,3]
+        print(b[2])
+        print("except try end")
+    except IndexError:
+        print("except except block")
+finally:
+    print("In finally")
+    
+print("Program end")
+
+program start
+try start
+in except block
+except try start
+3
+except try end
+in finally
+program end
+
+3)print("Program start")
+try:
+    print("try start")
+    a = 10/0
+    print("try end")
+    
+    
+except ValueError:
+    print("In except block")
+    try:
+        print("except try start")
+        b = [1,2,3]
+        print(b[10])
+        print("except try end")
+    except ValueError:
+        print("except except block")
+finally:
+    print("In finally")
+    
+print("Program end")
+
+output:
+program start
+try start
+in finally
+
+output

@@ -1,0 +1,88 @@
+i)a = 10/2
+ii)except IndexError
+iii)a = 10/2  print(b[2])
+
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/2
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[10])
+        print("Inner try end")
+    finally:
+        print("Inner finally block")
+
+except:
+    print("Outer except block")
+
+finally:
+    print("Outer finally")
+    
+print("Program end")
+output:
+program start
+outer try start
+inner try start
+inner finally block
+outer except block
+outer finally
+program end
+
+ii)except IndexError
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/0
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[10])
+        print("Inner try end")
+    finally:
+        print("Inner finally block")
+
+except IndexError:
+    print("Outer except block")
+
+finally:
+    print("Outer finally")
+    
+print("Program end")
+
+output:
+program start
+outer try start
+outer finally
+
+
+
+3)
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/2
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[2])
+        print("Inner try end")
+    finally:
+        print("Inner finally block")
+
+except :
+    print("Outer except block")
+
+finally:
+    print("Outer finally")
+    
+print("Program end")
+program start
+outer try start
+inner try start
+3
+inner try end
+inner finally block
+outer finally
+program end

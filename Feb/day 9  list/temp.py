@@ -1,0 +1,11 @@
+odd=[2,3,5]
+odd.append(7)
+print(odd)
+odd.extend([9,11,13])
+print(odd)
+odd.insert(3,2)
+print(odd)
+odd[5:5]=[8,6]
+print(odd)
+lis=[8,8,6,4,3,1,0]
+print(lis.sort())

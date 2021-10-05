@@ -1,0 +1,22 @@
+2)
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/2
+    print("Outer try end")
+
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[10])
+        print("Inner try end")
+    
+except:
+    print("Outer except block")
+
+print("Program end")
+
+-------->
+programstart
+outer try start
+inner trry start

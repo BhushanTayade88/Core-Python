@@ -1,0 +1,134 @@
+i)a = 10/2
+ii)a = 10/2    print(b[2])
+iii)a = 10/0   outer except ValueError
+iv)a = 10/2    inner except ValueError
+v)a = 10/2     inner except ValueError, outer except ZeroDivisionError
+
+1)
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/2
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[10])
+        print("Inner try end")
+    except IndexError:
+        print("Inner except block")
+
+except :
+    print("Outer except block")
+
+print("Program end")
+output:
+Program start
+outer try start
+inner try start
+inner except block
+program end
+
+2)
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/2
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[2])
+        print("Inner try end")
+    except IndexError:
+        print("Inner except block")
+
+except:
+    print("Outer except block")
+
+print("Program end")
+output:
+Program start
+outer try start
+inner try start
+3
+program end
+
+3)
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/0
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[2])
+        print("Inner try end")
+    except IndexError:
+        print("Inner except block")
+
+except ValueError:
+    print("outer except Block")
+
+print("Program end")
+output:
+Program start
+outer try start
+Error
+
+
+4)
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/2
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[2])
+        print("Inner try end")
+    except IndexError:
+        print("Inner except block")
+
+except:
+    print("outer except ValueError")
+
+print("Program end")
+output:
+program start
+outer try start
+inner try start
+3
+inner try end
+program end
+
+
+5)
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/2
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[4])
+        print("Inner try end")
+    except inner except ValueError:
+        print("Inner except block")
+
+except ZeroDivisionError:
+    print("outer except ValueError")
+
+print("Program end")
+output:
+program start
+outer try start
+inner try start
+3
+inner try end
+program end
+
+
+i)a = 10/2
+ii)a = 10/2    print(b[2])
+iii)a = 10/0   outer except ValueError
+iv)a = 10/2    inner except ValueError
+v)a = 10/2     inner except ValueError, outer except ZeroDivisionError

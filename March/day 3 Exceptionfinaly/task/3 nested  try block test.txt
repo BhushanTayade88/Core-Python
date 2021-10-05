@@ -1,0 +1,57 @@
+3)
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/2
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[10])
+        print("Inner try end")
+    except Exception:
+        print("Inner except block")
+
+except ZeroDivisionError:
+    print("Outer except block")
+
+finally:
+    print("In finally")
+    
+print("Program end")
+i)a = 10/2
+program start
+outer try start
+inner try start
+inner exceptblock
+in finally
+Program end
+
+
+
+ii)outer except IndexError
+
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/0
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[10])
+        print("Inner try end")
+    except Exception:
+        print("Inner except block")
+
+except IndexError:
+    print("Outer except block")
+
+finally:
+    print("In finally")
+    
+print("Program end")
+
+output:
+program start
+outer try start
+in finally
+error

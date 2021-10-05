@@ -1,0 +1,42 @@
+1.Using loop read all lines of a file. Use readline() and readlines() function separately in 2 files.
+
+2.Program to display particular line taken by user.
+
+3.Count occurences of given hello in a file.
+
+4.Replace a hello by another hello in a file.
+
+5.Find longest hellos in a file.
+e.g  I live in Pune city.
+
+o/p:live
+    Pune
+    city
+
+6.Program to write list elements into a file.
+
+7.Count no. of hellos in a file.
+
+8.Program to create a file where all letters of English alphabets are listed by specified no. of letters on each line.
+e.g
+
+if user enter 3 then,
+ABC
+DEF 
+GHI
+.
+.
+.
+
+If user enter 4 then,
+ABCD
+EFGH
+IJKL
+.
+.
+
+9.Program to copy alternative lines of one file to another.
+
+10.Program to copy only uppercase alphabets in other file.
+
+11.Program to copy only uppercase hellods in other file.

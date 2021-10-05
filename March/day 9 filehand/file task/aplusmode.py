@@ -1,0 +1,10 @@
+f = open("newfile.txt","a+")
+f.seek(0)
+data = f.read()
+newdata=data.replace("hello","bhush")
+f.seek(0)
+f.write(newdata)
+f.seek(0)
+print(f.read())
+
+f.close()

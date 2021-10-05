@@ -1,0 +1,26 @@
+class employee:
+	empid=0
+	empname=""
+	empdesg=""
+	empsal=0
+	empcity=""
+def setData(self,id,name,desg,sal,city):
+	self.empid=id
+	self.empname=name
+	self.empdesg=desg
+	self.empsal=sal
+	self.empcity=city 
+def showData(self):
+        print("ID\t\t:",self.empid)
+        print("Name\t:",self.empname)
+        print("Designation\t:",self.empdesg)
+        print("Salary\t:",self.empsal)
+        print("City\t:",self.empcity)
+def main():
+	a=employee()
+	a.setData(101,"bhushan","dev",600000,"yavatmal")
+	a.showData()
+if __name__=="__main__":
+        main()	
+
+

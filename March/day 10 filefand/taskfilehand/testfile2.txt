@@ -1,0 +1,42 @@
+1.Using LOOP read all lines of a file. Use readline() and readlines() function separately in 2 files.
+
+2.Program to display particular line taken by user.
+
+3.Count occurences of given word in a file.
+
+4.Replace a word by another word in a file.
+
+5.Find longest words in a file.
+e.g  BHUSHAN live in Pune city.
+
+o/p:live
+    Pune
+    city
+
+6.PROGRAM to write list elements into a file.
+
+7.Count no. of words in a file.
+
+8.Program to create a file where all letters of English alphabets are listed by specified no. of letters on each line.
+e.g
+
+if user enter 3 then,
+ABC
+DEF 
+GHI
+.
+.
+.
+
+If user enter 4 then,
+ABCD
+EFGH
+IJKL
+.
+.
+
+9.Program to copy alternative lines of one file to another.
+
+10.Program to copy only uppercase alphabets in other file.
+
+11.Program to copy only uppercase wordds in other file.

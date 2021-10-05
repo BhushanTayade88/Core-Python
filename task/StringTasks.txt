@@ -1,0 +1,24 @@
+1.Accept string from a user and display only those characters which are present at an even index number.
+
+2.Return the total count of string “Emma” appears in the given string without using count method and with using count method.
+
+Given string: 
+“Emma is good developer. Emma is a writer”
+
+3.Given 2 strings, s1, and s2 return a new string made of the first, middle and last char each input string
+
+Output:
+mixString("America", "Japan") = "AJrpan"
+
+4.String rotation program
+Input: 
+string = "pythonprogram"
+d = 2
+
+Output: 
+Left Rotation:  thonprogrampy
+Right Rotation:  ampythonprogr
+
+5.Given a string input,count all lower case, upper case and digits without using built-in functions.
+e.g s = "HelLo12"
+o/p: uppercase:2, lowercase:3, digits:2

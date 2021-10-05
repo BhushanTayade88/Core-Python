@@ -1,0 +1,49 @@
+1.Access value 20 from the following tuple
+aTuple = ("Orange", [10, 20, 30], (5, 15, 25))
+
+Expected output:
+20
+
+2.Swap the following two tuples
+tuple1 = (11, 22)
+tuple2 = (99, 88)
+
+Expected output:
+
+tuple1 = (99, 88)
+tuple2 = (11, 22)
+
+3.Copy element 44 and 55 from the following tuple into a new tuple
+tuple1 = (11, 22, 33, 44, 55, 66)
+
+Expected output:
+
+tuple2 = (44, 55)
+
+4.Modify the first item (22) of a list inside a following tuple to 222
+tuple1 = (11, [22, 33], 44, 55)
+
+
+Expected output:
+
+tuple1 = (11, [222, 33], 44, 55)
+
+5.Sort a tuple of tuples by 2nd item
+tuple1 = (('a', 23),('b', 37),('c', 11), ('d',29))
+
+Expected output:
+
+(('c', 11), ('a', 23), ('d', 29), ('b', 37))
+
+6.Check if all items in the following tuple are the same
+tuple1 = (45, 45, 45, 45)
+
+Expected output:
+True
+7.l=[10,2,3,4,5,7,10,2,3,10]
+
+for i in range(len(l)):
+               if i==10:
+                l.pop(i)
+                l.insert(i,100)
+                print(l)

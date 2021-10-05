@@ -1,0 +1,152 @@
+1. What is the output of the following code?
+
+sampleList = ["Jon", "Kelly", "Jessa"]
+sampleList.append(2, "Scott")
+print(sampleList)
+------->["Jon", "Kelly","Scott","Jessa"]
+
+
+2. What is the Output of the following code?
+
+for x in range(0.5, 5.5, 0.5):
+	print(x)
+---------->0.5
+           5.5
+           0.5
+
+3. What is the output of the following code?
+
+p, q, r = 10, 20 ,30
+print(p, q, r)
+ -------------->10 20 30
+
+4. What is the output of the following code?
+
+var = "James" * 2  * 3
+print(var)
+-------------->jamesjamesjamesjamesjamesjames
+
+5. What is the output of the following code
+salary = 8000
+
+def printSalary():
+  salary = 12000
+  print("Salary:", salary)
+  
+printSalary()
+print("Salary:", salary)
+---------->salary:12000
+           salary:8000
+
+6. What is the output of the following code?
+
+sampleSet = {"Jodi", "Eric", "Garry"}
+sampleSet.add(1, "Vicki")
+print(sampleSet)
+------------->error
+
+7. What is the output of the following
+
+x = 36 / 4 * (3 +  2) * 4 + 2
+print(x)
+------------>182
+8.What is the output of the following code?
+
+for i in range(10, 15, 1):
+  print( i, end=', ')
+---------------->10,11,12,13,14
+9.A string is immutable in Python?
+
+ .True
+ .False
+------>immutable
+10.What is the output of the following code?
+
+def calculate (num1, num2=4):
+  res = num1 * num2
+  print(res)
+
+calculate(5, 6)
+------------>30
+11. What is the output of the following code?
+
+var= "James Bond"
+print(var[2::-1])
+-------->mej
+
+12.What is the output of the following code
+
+aTuple = (100, 200, 300, 400, 500)
+print(aTuple[-2])
+print(aTuple[-4:-1])
+----------------->400
+                  200,300,400
+13.What is the type of the following variable
+
+aTuple = ("Orange")
+print(type(aTuple))
+ .list
+ .tuple
+ .array
+ .str
+------>str
+
+14.What is the output of the following tuple operation
+
+aTuple = (100,)
+print(aTuple * 2)2
+----------->100100
+
+15.What is the output of the following
+
+aTuple = "Yellow", 20, "Red"
+a, b, c = aTuple
+print(a)
+------------>yellow
+16.What is the output of the following code
+
+aTuple = (100, 200, 300, 400, 500)
+aTuple[1] = 800
+print(aTuple)
+-------------->
+
+17.Select all the correct options to copy a list
+
+aList = ['a', 'b', 'c', 'd']
+
+ .newList = copy(aList) no
+ .newList = aList.copy() yes
+ .newList.copy(aList) no
+ .newList = list(aList) yes
+------------->4,2
+18. What is the output of the following
+
+aList = [5, 10, 15, 25]
+print(aList[::-2])
+--------->25 10
+19.What is the output of the following
+
+l = [None] * 10
+print(len(l))
+-------->
+20.What is the output of the following list operation
+
+sampleList = [10, 20, 30, 40, 50]
+print(sampleList[-2])
+print(sampleList[-4:-1])
+-------------->40
+               20 30 40
+21.What is the output of the following list assignment
+
+aList = [4, 8, 12, 16]
+aList[1:4] = [20, 24, 28]
+print(aList)
+------------->[4,20,24,28]
+22.What is the output of the following list function?
+
+sampleList = [10, 20, 30, 40, 50]
+sampleList.pop()
+print(sampleList)------------>[10,20,30,40]
+
+sampleList.pop(2)
+print(sampleList)------------>10,20,40

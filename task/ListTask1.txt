@@ -1,0 +1,32 @@
+1.Program to create odd-even elements list from given list.
+
+2.Program to create positive-negative elements list from given list.
+
+3.Program to count elements in a list without using built in function.
+
+4.Program to check elements of list are divisible by a number taken by user and create a separate list of divisible elements.
+
+5.Program to turn every element of list into its square.
+
+6.Given a list find a value 10 from list and replace it with 100.Take value 10 2-3 times in list.
+
+7.l1 = ["Hello","Bye"]
+  l2 = ["Pune","Mumbai"]
+
+o/p :  ["Hello Pune","Hello Mumbai","Bye Pune","Bye Mumbai"] without using any built-in function.
+
+8. l1 = ["M","na","i","Em"]
+   l2 = ["y","me","s","ma"]
+
+o/p : ["My","name","is","Emma"]  without using any built-in function.
+
+9.
+Cdegrees=[]  [20,30,45,56]
+Fdegrees=[]---> 
+F = (9.0/5)*C + 32
+
+table=[Cdegrees,Fdegrees]
+Print the values
+
+10.Remove completely the 5's from the list.
+l+ = [1,5,6,7,5,2,7,8,5,9,5,4,5]

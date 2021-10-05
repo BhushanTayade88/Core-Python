@@ -1,0 +1,30 @@
+stud_list = [....] Take no of students from user
+
+POJO class Student:
+rollno,name,physics marks,chemistry marks,biology marks,maths marks --- private with setter/getter
+setRollno,getRollno e.g __rollno
+
+Topper.py
+1.Insert data
+2.Display data
+3.Exit
+
+
+1.Insert data
+ Insert no of students with exception handling
+
+2.Display data
+ 1.Display all
+ 2.Display particular student with respect to parameter rollno or name
+ 3.Display toppers section
+ 
+
+In display toppers section--->
+1.Physics topper
+2.Chemistry topper
+3.Biology topper
+4.Maths topper
+5.All subject topper
+
+If two student have same marks and they both are topper then both students should be displayed as topper.
+Student's rollno,name and that particular subject marks should be displayed in toppers section.

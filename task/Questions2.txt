@@ -1,0 +1,320 @@
+﻿1.What is the output of the following program?
+counter = {} 
+  
+def addToCounter(country): 
+    if country in  counter: 
+        counter[country] += 1
+    else: 
+        counter[country] = 1
+  
+addToCounter('China') 
+addToCounter('Japan') 
+addToCounter('china') 
+print(len(counter)) 
+------------->3
+
+2.What will be the output of the program?
+a = "Hello World"
+b = 13
+print(a + b) 
+------------->error
+
+3.What is the output of the following program?
+dictionary = {} 
+dictionary[1] = 1
+dictionary['1'] = 2
+dictionary[1] += 1
+  
+sum = 0
+for k in dictionary: 
+    sum += dictionary[k]
+  
+print(sum)
+----->4
+
+4.What is the output of the following program?
+nameList = ['Harsh', 'Kevin', 'Bob', 'Dhruv'] 
+print(nameList[1][-1])
+-------->n 
+
+5.What is the output of the following program?
+Codes = [1, 2, 3, 4] 
+  
+Codes.append([5,6,7,8]) 
+print(len(Codes)) 
+---------->5
+  
+6.What is the output of the following program?
+check1 = ['Learn', 'Quiz', 'Practice', 'Contribute'] 
+check2 = check1 
+check3 = check1[:] 
+  
+check2[0] = 'Code'
+check3[1] = 'Mcq'
+  
+count = 0
+for c in (check1, check2, check3): 
+    if c[0] == 'Code': 
+        count += 1
+    if c[1] == 'Mcq': 
+        count += 10
+print(count) 
+------------>13
+7.What is the output of the following program?
+def f1(x,l=[]): 
+    for i in range(x): 
+        l.append(i*i) 
+    print(l)  
+  
+f1(2) 
+f1(3,[3,2,1]) ---->here it overwrite on [0,1]
+f1(3) 
+-------------->0 1
+               [[3,2,1]0,1,4]
+               [0,1,0,1,4]---->it takes a default value of list that is 0,1 
+8.What is the output of the following program?
+list = ['a', 'b', 'c'] * -3
+print(list)
+--------->[] empty list
+9.What is the output of the following program?
+
+dictionary1 = {'Google' : 1, 
+               'Facebook' : 2, 
+               'Microsoft' : 3
+               } 
+dictionary2 = {'Chrome' : 1, 
+               'Microsoft' : 2, 
+               'Youtube' : 3
+               } 
+dictionary1.update(dictionary2); 
+for key, values in dictionary1.items(): 
+    print(key, values) 
+
+a) Compilation error
+b) Runtime error
+c) (‘Google’, 1)
+(‘Facebook’, 2)
+(‘Youtube’, 3)
+(‘Microsoft’, 2)
+(‘Chrome’, 1)
+d) None of these
+----------------->3
+10.What is the output of the following program?
+
+temp = dict() 
+temp['key1'] = {'key1' : 44, 'key2' : 566} 
+temp['key2'] = [1, 2, 3, 4] 
+for (key, values) in temp.items(): 
+    print(values, end = "") 
+
+a) Compilation error
+b) {‘key1’: 44, ‘key2’: 566}[1, 2, 3, 4]
+c) Runtime error
+d) None of the above
+-------------->b
+11. What is the output of the following program?
+
+data = [2, 3, 9] 
+temp = [[x for x in[data]] for x in range(3)] 
+print (temp) 
+------------->
+a) [[[2, 3, 9]], [[2, 3, 9]], [[2, 3, 9]]]
+b) [[2, 3, 9], [2, 3, 9], [2, 3, 9]]
+c) [[[2, 3, 9]], [[2, 3, 9]]]
+d) None of these
+------------>a
+12.What is the output of the following program?
+
+data = [x for x in range(5)] 
+temp = [x for x in range(7) if x in data and x%2==0] 
+print(temp) 
+----------->0,2,4
+13.What is the output of the following program?
+
+temp = ['Please', 'pay', 'Tax'] 
+arr = [i[0].upper() for i in temp] 
+print(arr) 
+----------->P P T
+14.What is the output of the following program?
+
+L1 = list() #[[1,[2,3],4]7,8,9]
+L1.append([1, [2, 3], 4]) 
+L1.extend([7, 8, 9]) 
+print(L1[0][1][1] + L1[2]) 
+----------->3+8=11
+15.What is the output of the following program?
+
+L1 = [1, 1.33, 'CJC', 0, 'NO', None, 'C', True] 
+val1, val2 = 0, '' 
+for x in L1: 
+    if(type(x) == int or type(x) == float): 
+        val1 += x 
+    elif(type(x) == str): 
+        val2 += x 
+    else: 
+        break
+print(val1, val2) 
+----------->2.33,CJC------->None is seoprate
+16.What is the output of the following program?
+
+T1 = (1)-->its a integer vlue not tup[le
+T2 = (3, 4) 
+T1 += 5
+print(T1) 
+print(T1 + T2) 
+
+a) TypeError
+b) (1, 5, 3, 4)
+c) 1 TypeError
+d) 6 TypeError
+-----------> 6 type error
+17.What is the output of the following program?
+
+List = [True, 50, 10] 
+List.insert(2, 5)     
+print(List, "Sum is: ", sum(List))  
+------------>[True,50,5,10] sum =66
+18.What is the output of the following program?
+
+T = (1, 2, 3, 4, 5, 6, 7, 8) 
+print(T[T.index(5)], end = " ")------------> 
+print(T[T[T[6]-3]-6]) ------->
+------->5 
+19.What is the output of the following program?
+
+L = [1, 3, 5, 7, 9] 
+print(L.pop(-3), end = '  ') 
+print(L.remove(L[0]), end = '  ') 
+print(L) 
+a) 5 None [3, 7, 9]
+b) 5 1 [3, 7, 9]
+c) 5 1 [3, 7, 9]
+d) 5 None [1, 3, 7, 9]
+----------->5 none[3,7,9]
+20.What is the output of the following program?
+
+def REVERSE(L): 
+    L.reverse() 
+    return(L) 
+def YKNJS(L): 
+    List = list() 
+    List.extend(REVERSE(L)) 
+    print(List) 
+  
+L = [1, 3.1, 5.31, 7.531] 
+YKNJS(L) 
+------>[7.531,5.31,3.1,1]
+21.What is the output of the following program?
+
+D = {1 : 1, 2 : '2', '1' : 1, '2' : 3} 
+D['1'] = 2
+print(D[D[D[str(D[1])]]]) 
+------------>3
+print(str(D[1]))
+print(D[str(D[1])])
+print(D[D[str(D[1])]])
+print(D[D[D[str(D[1])]]]) 
+
+22.What is the output of the following program?
+
+D = {1 : {'A' : {1 : "A"}, 2 : "B"}, 3 :"C", 'B' : "D", "D": 'E'} 
+print(D[D[D[1][2]]], end = " ") 
+print(D[D[1]["A"][2]]) 
+----------->E
+            error            
+23.What is the output of the following program?
+
+D = dict() 
+for i in range (3): 
+    for j in range(2): 
+        D[i] = j 
+print(D) 
+-------------->{0:1,1:1,2:1}
+24.Which of the options below could possibly be the output of the following program?
+
+D = {1 : [1, 2, 3], 2: (4, 6, 8)} 
+D[1].append(4) 
+print(D[1], end = " ") 
+L  = list(D[2]) 
+L.append(10) 
+D[2] = tuple(L) 
+print(D[2]) 
+------------>[1,2,3,4][4,6,8,10]
+25.What is the output of the following program?
+
+x =['ab', 'cd'] 
+for i in x: 
+    i.upper() 
+print(x)
+------------>ab,cd
+26.What is the output of the following program?
+
+x = ['ab', 'cd'] 
+for i in x: 
+    x.append(i.upper()) 
+print(x) 
+--------->memory error becouse itis infinite loop [ab,cd,AB,CD,..........memory error]
+27.What is the output of the following program?
+
+x = 123
+for i in x: 
+    print(i) 
+------------>we cant iterate integer veriable
+28.What is the output of the following program?
+
+for i in [1, 2, 3, 4][::-1]: 
+    print (i) 
+--------->4 3 2 1
+29.What is the output of the following program?
+
+T = tuple('hello') 
+a, b, c, d, e = T 
+c = d = '*'
+T = (a, b, c, d, e) 
+print(T) 
+---------->h e * * o
+30.What is the output of the following program?
+
+str1 = '{2}, {1} and {0}'.format('a', 'b', 'c') 
+str2 = '{0}{1}{0}'.format('abra', 'cad') 
+print(str1, str2)
+----------->c b and a
+            abracadabra
+31.What is the output of the following program?
+
+line =  "What will have so will"
+L = line.split('a') 
+for i in L: 
+    print(i, end=' ') 
+------------->wh t will h ve so will
+32.What will be the output of the following program ?
+
+tuple = {} 
+tuple[(1,2,4)] = 8
+tuple[(4,2,1)] = 10
+tuple[(1,2)] = 12
+_sum = 0
+for k in tuple: 
+    _sum += tuple[k] 
+print(len(tuple) + _sum) 
+-------------->33
+33.What will be the output of the following program ?
+
+tuple1 = (1, 2, 4, 3) 
+tuple2 = (1, 2, 3, 4) 
+print(tuple1 < tuple2) 
+------------->false
+34.What is the output of the following?
+
+my_string = 'titfortat'
+for i in range(len(my_string)): 
+    print (my_string) 
+    my_string = 'a'
+------------>titfortat a a a a a a a a
+35.What is the output of the code shown below?
+
+set1 = {1, 2, 3} 
+set2 = set1.copy() 
+set2.add(4) 
+print(set1) 
+-------------->1,2,3

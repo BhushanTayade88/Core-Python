@@ -1,0 +1,254 @@
+#check for the type of exception
+1)a = [10,20,30]
+print(a[10])
+------------>IndexError:List index out of range
+2)x = int('CJC')
+------------>Valueaerror:invalid literal for int() with base 10: 'CJC'
+3)x = int(['CJC'])
+------------------->TypeError:int() argument must be a string, a bytes-like object or a number, not 'list'
+4)print(s)
+------------>NameError: name 's' is not defined
+5)counter = 0
+def m1():
+	counter += 1
+
+m1()
+------------------->UnboundLocalError: local variable 'counter' referenced before assignment
+why exception is occur
+**************************************
+
+finally with return statement--->
+
+1)
+def m1():
+    try:
+        a = 10/0
+        print("In try")
+        return 10
+    except:
+         print("In except")
+         return 20
+
+x = m1()
+print(x)
+------------->In except
+              20
+2)
+def m1():
+    a = 5
+    try:
+        a = 10
+        b = 10/0
+        print("In try")
+        return a
+    except:
+         print("In except")
+         return a
+
+x = m1()
+print(x)
+------------->In except
+              10
+3)
+def m1():
+    a = 5
+    try:
+        a = 10
+        print("In try")
+        b = 10/0
+        return a
+    finally:
+         print("In finally")
+         return a
+
+x = m1()
+print(x)
+-------------->In try
+               In finaly
+               10
+4)
+def m1():
+    a = 5
+    try:
+        a = 10
+        print("In try")
+        b = 10/0
+        return a
+    finally:
+         a = 30
+         print("In finally",a)
+         return 30
+
+x = m1()
+print(x)
+--------------->In try
+                In finally 30
+                30
+5)
+def m1():
+    try:
+        a = 10
+        print("In try")
+        b = 10/0
+        return a
+    finally:
+         print("In finally",a)
+         return 30
+         return 40
+
+x = m1()
+print(x)
+----------------->In try
+                  In finally 10
+                  30
+                  
+*******************************************
+Nested Try block tasks-->
+1)
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/0
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[10])
+        print("Inner try end")
+    except IndexError:
+        print("Inner except block")
+
+except:
+    print("Outer except block")
+
+print("Program end")
+i)a = 10/2
+ii)a = 10/2    print(b[2])
+iii)a = 10/0   outer except ValueError
+iv)a = 10/2    inner except ValueError
+v)a = 10/2     inner except ValueError, outer except ZeroDivisionError
+
+2)
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/2
+    print("Outer try end")
+
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[10])
+        print("Inner try end")
+    
+except:
+    print("Outer except block")
+
+print("Program end")
+---------------
+3)
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/0
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[10])
+        print("Inner try end")
+    except Exception:
+        print("Inner except block")
+
+except ZeroDivisionError:
+    print("Outer except block")
+
+finally:
+    print("In finally")
+    
+print("Program end")
+
+i)a = 10/2
+ii)outer except IndexError
+
+4)
+print("Program start")
+try:
+    print("try start")
+    a = 10/0
+    print("try end")
+    
+    
+except ZeroDivisionError:
+    print("In except block")
+    try:
+        print("except try start")
+        b = [1,2,3]
+        print(b[10])
+        print("except try end")
+    except IndexError:
+        print("except except block")
+finally:
+    print("In finally")
+    
+print("Program end")
+
+i)a = 10/2
+ii)print(b[2])
+iii)except block except ValueError
+
+5)
+print("Program start")
+try:
+    print("Outer try start")
+    a = 10/0
+    try:
+        print("Inner try start")
+        b = [1,2,3]
+        print(b[10])
+        print("Inner try end")
+    finally:
+        print("Inner finally block")
+
+except:
+    print("Outer except block")
+
+finally:
+    print("Outer finally")
+    
+print("Program end")
+
+i)a = 10/2
+ii)except IndexError
+iii)a = 10/2  print(b[2])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

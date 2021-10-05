@@ -1,0 +1,37 @@
+1.Program to find odd and even elements list from given list using Lambda function.
+
+2.Program to cube each number of the list using Lambda function  
+
+3.Program to find whether a given string starts with a given character using Lambda.
+e.g If user enters string as 'Python' and character as P then it is true and if character is J then it is false
+
+4.Python program to create a list which contains the values having length of 6 using Lambda.
+weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+Output:
+Monday
+Friday
+Sunday
+
+
+5.Python program to add two given lists using Lambda.
+nums1 = [1, 2, 3]
+nums2 = [4, 5, 6]
+Result: after adding two list
+[5, 7, 9]
+
+
+6.Write a Python program to find palindromes in a given list of strings using Lambda.
+texts = ["php", "wow", "Python", "abcd", "Java", "aaa"]
+List of palindromes:
+['php', 'wow','aaa']
+
+
+7.Given a list,
+l = ['cat','dog','dow','sheep']
+Make the first character of words into capital.
+
+8.ages = [13, 90, 17, 59, 21, 60, 5] Make a new list as 'adults' which contains age greater than 18.
+
+9.li = [5, 8, 10, 20, 50, 100] Find out sum of elements of list
+
+10.lis = [ 1 , 3, 5, 6, 2, ]  Find out the maximum element of the list.

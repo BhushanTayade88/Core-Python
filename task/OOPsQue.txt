@@ -1,0 +1,422 @@
+﻿------->A
+2. Which of the following statements is wrong about inheritance?
+a) Protected members of a class can be inherited
+b) The inheriting class is called a subclass
+c) Private members of a class can be inherited and accessed
+d) Inheritance is one of the features of OOP
+---------->c
+3. What will be the output of the following Python code?
+class Test:
+    def __init__(self):
+        self.x = 0
+class Derived_Test(Test):
+    def __init__(self):
+        self.y = 1
+def main():
+    b = Derived_Test()
+    print(b.x,b.y)
+main()
+---------->we cant declare x so it gives u error
+4.Suppose B is a subclass of A, to invoke the __init__ method in A from B, what is the line of code you should write?
+a) A.__init__(self)
+b) B.__init__(self)
+c) A.__init__(B)
+d) B.__init__(A)
+----------->A
+5.What will be the output of the following Python code?
+class A:
+    def __init__(self, x= 1):
+        self.x = x
+class der(A):
+    def __init__(self,y = 2):
+        super().__init__()
+        self.y = y
+def main():
+    obj = der()
+    print(obj.x, obj.y)
+main()
+------------>1,2
+6.What does built-in function type do in context of classes?
+a) Determines the object name of any value
+b) Determines the class name of any value
+c) Determines class description of any value
+d) Determines the file name of any value
+------------>B
+7.What does built-in function help do in context of classes?
+a) Determines the object name of any value
+b) Determines the class identifiers of any value
+c) Determines class description of any built-in type
+d) Determines class description of any user-defined built-in type
+--------------->c
+8.What will be the output of the following Python code?
+class A:
+     def __init__(self):
+         self.__i = 1
+         self.j = 5
+ 
+     def display(self):
+         print(self.__i, self.j)
+class B(A):
+     def __init__(self):
+         super().__init__()
+         self.__i = 2
+         self.j = 7  
+c = B()
+c.display()
+------------>
+9.Which of the following statements isn’t true?
+a) A non-private method in a superclass can be overridden
+b) A derived class is a subset of superclass
+c) The value of a private variable in the superclass can be changed in the subclass
+d) When invoking the constructor from a subclass, the constructor of superclass is automatically invoked
+------------>
+10.What will be the output of the following Python code?
+class A:
+    def __init__(self,x):
+        self.x = x
+    def count(self,x):
+        self.x = self.x+1
+class B(A):
+    def __init__(self, y=0):
+        A.__init__(self, 3)
+        self.y = y
+    def count(self):
+        self.y += 1     
+def main():
+    obj = B()
+    obj.count()
+    print(obj.x, obj.y)
+main()
+---------->3,1
+11.What will be the output of the following Python code?
+class A:
+    def __init__(self):
+        self.__x = 1
+class B(A):
+    def display(self):
+        print(self.__x)
+def main():
+    obj = B()
+    obj.display()
+main()
+---------->1
+12.What will be the output of the following Python code?
+class A:
+    def __init__(self):
+        self._x = 5-------->(protected variable it is same as public variable)       
+class B(A):
+    def display(self):
+        print(self._x)
+def main():
+    obj = B()
+    obj.display()
+main()
+-------------->5
+13.What will be the output of the following Python code?
+class A:
+    def __init__(self,x=3):
+        self._x = x        
+class B(A):
+    def __init__(self):
+        super().__init__(5)
+    def display(self):
+        print(self._x)
+def main():
+    obj = B()
+    obj.display()
+ 
+main()
+---------->5
+14.Which of the following best describes polymorphism?
+a) Ability of a class to derive members of another class as a part of its own definition
+b) Means of bundling instance variables and methods in order to restrict access to certain class members
+c) Focuses on variables and passing of variables to functions
+d) Allows for objects of different types and behaviour to be treated as the same general type
+----------->d
+15.What is the biggest reason for the use of polymorphism?
+a) It allows the programmer to think at a more abstract level
+b) There is less program code to write
+c) The program will have a more elegant design and will be easier to maintain and update
+d) Program code takes up less space
+----------->c
+16.What is the use of duck typing?
+a) More restriction on the type values that can be passed to a given method
+b) No restriction on the type values that can be passed to a given method
+c) Less restriction on the type values that can be passed to a given method
+d) Makes the program code smaller
+-------------->c
+17.What will be the output of the following Python code?
+class A:
+    def __str__(self):
+        return '1'
+class B(A):
+    def __init__(self):
+        super().__init__()
+class C(B):
+    def __init__(self):
+        super().__init__()
+def main():
+    obj1 = B()
+    obj2 = A()
+    obj3 = C()
+    print(obj1, obj2,obj3)
+main()
+------------>111
+18.What will be the output of the following Python code?
+class Demo:
+    def __init__(self):
+        self.x = 1
+    def change(self):
+        self.x = 10
+class Demo_derived(Demo):
+    def change(self):
+        self.x=self.x+1
+        return self.x
+def main():
+    obj = Demo_derived()
+    print(obj.change())
+ 
+main()
+------------------>2
+19.Overriding means changing behaviour of methods of derived class methods in the base class.
+a) True
+b) False
+------------>false
+20.What will be the output of the following Python code?
+class A:
+    def __init__(self):
+        self.multiply(15)
+        print(self.i)
+ 
+    def multiply(self, i):
+        self.i = 4 * i;
+class B(A):
+    def __init__(self):
+        super().__init__()
+ 
+    def multiply(self, i):
+        self.i = 2 * i;
+obj = B()
+-------------->confuse
+21.What will be the output of the following Python code?
+class Demo:
+    def check(self):
+ .       return " Demo's check "  
+    def display(self):
+        print(self.check())
+class Demo_Derived(Demo):
+    def check(self):
+        return " Derived's check "
+Demo().display()
+Demo_Derived().display()
+--------------->Demos check
+                derived check
+22.What will be the output of the following Python code?
+class A:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    def __str__(self):
+        return 1
+    def __eq__(self, other):
+        return self.x * self.y == other.x * other.y
+obj1 = A(5, 2)
+obj2 = A(2, 5)
+print(obj1 == obj2)
+-------------->True
+23.What will be the output of the following Python code?
+class A:
+    def one(self):
+        return self.two()    	
+    def two(self):
+        return 'A'   
+class B(A):
+    def two(self):
+        return 'B'
+obj2=B()
+print(obj2.two())
+------------>B
+24.Which of the following statements is true?
+a) A non-private method in a superclass can be overridden
+b) A subclass method can be overridden by the superclass
+c) A private method in a superclass can be overridden
+d) Overriding isn’t possible in Python
+------------>A
+25.Which of the following is the most suitable definition for encapsulation?
+a) Ability of a class to derive members of another class as a part of its own definition
+b) Means of bundling instance variables and methods in order to restrict access to certain class members
+c) Focuses on variables and passing of variables to functions
+d) Allows for implementation of elegant software that is well designed and easily modified
+------------->b
+26.What will be the output of the following Python code?
+class Demo:
+    def __init__(self):
+        self.a = 1
+        self.__b = 1
+ 
+    def display(self):
+        return self.__b
+obj = Demo()
+print(obj.a)
+------------>1
+27.What will be the output of the following Python code?
+class Demo:
+    def __init__(self):
+        self.a = 1
+        self.__b = 1
+ 
+    def display(self):
+        return self.__b
+ 
+obj = Demo()
+print(obj.__b)
+------------->we can access private variable directly through obj
+28.Methods of a class that provide access to private members of the class are called as ______ and ______
+a) getters/setters
+b) __repr__/__str__
+c) user-defined functions/in-built functions
+d) __init__/__del__
+
+29.Which of these is a private data field?
+class Demo:
+    def __init__(self):
+       __a = 1
+       self.__b = 1
+       self.__c__ = 1
+       __d__= 1
+
+a) __a
+b) __b
+c) __c__
+d) __d__
+-------------->b
+30.What will be the output of the following Python code?
+class Demo:
+     def __init__(self):
+         self.a = 1
+         self.__b = 1
+ 
+     def get(self):
+         return self.__b
+ 
+obj = Demo()
+print(obj.get())
+------------>1
+31.What will be the output of the following Python code?
+class Demo:
+     def __init__(self):
+         self.a = 1
+         self.__b = 1
+     def get(self):
+         return self.__b
+obj = Demo()
+obj.a=45
+print(obj.a)
+------------->45
+32.What will be the output of the following Python code?
+class fruits:
+    def __init__(self):
+        self.price = 100
+        self.__bags = 5
+    def display(self):
+        print(self.__bags)
+obj=fruits()
+obj.display()
+---------------------->5
+33.What will be the output of the following Python code?
+ class student:
+    def __init__(self):
+        self.marks = 97
+        self.__cgpa = 8.7
+    def display(self):
+        print(self.marks)
+obj=student()
+print(obj._student__cgpa)name mangling method
+------------->8.7
+34.Which of the following is false about protected class members?
+a) They begin with one underscore
+b) They can be accessed by subclasses
+c) They can be accessed by name mangling method
+d) They can be accessed within a class
+-------------->C
+35.What will be the output of the following Python code?
+class objects:
+    def __init__(self):
+        self.colour = None
+        self._shape = "Circle" 
+ 
+    def display(self, s):
+        self._shape = s
+obj=objects()
+print(obj._objects_shape)
+
+a)The program runs fine because name mangling has been properly implemented
+b) Error because the member shape is a protected member
+c) Error because the proper syntax for name mangling hasn’t been implemented
+d) Error because the member shape is a private member
+--------------->B
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
